@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iraqi Women Association Fund (IWAF) | Registered charity 1045994</title>
+<meta name="description" content="IWAF is a small, volunteer-run UK charity supporting orphans, widows and families in need in Iraq since 1995. Sponsor a child from £25 a month.">
+<meta property="og:title" content="Iraqi Women Association Fund">
+<meta property="og:description" content="Thirty years of showing up for Iraq's orphans and widows. UK registered charity 1045994.">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Instrument+Sans:wght@400;500;600&family=Noto+Sans+Cuneiform&display=swap" rel="stylesheet">
+<style>
+:root{
+  --lapis:#1b3c8c; --lapis-deep:#0f2357; --glaze:#2b86b0; --gold:#e0a83e; --gold-soft:#f3d79a;
+  --clay:#b0532d; --paper:#f7f0e4; --paper-2:#efe4d1; --ink:#1d1a16; --muted:#5f574c; --line:#ddcfb8;
+  --radius:14px; --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"Instrument Sans",system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+h2{font-size:clamp(32px,4.4vw,52px)}
+h3{font-size:22px}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--clay)}
+.lede{font-size:clamp(18px,1.6vw,21px);color:var(--muted);max-width:620px}
+section{padding:96px 0}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:600;text-decoration:none;font-size:16px;border:2px solid transparent;cursor:pointer;transition:transform .15s ease, background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:var(--lapis-deep)}
+.btn-gold:hover{background:#ebb553}
+.btn-ghost{border-color:rgba(255,255,255,.5);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-ink{background:var(--lapis);color:#fff}
+
+/* nav */
+nav.top{position:sticky;top:0;z-index:50;background:rgba(15,35,87,.96);backdrop-filter:blur(8px);color:#fff}
+nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-mark{width:38px;height:38px;flex:none}
+.brand-name{font-family:"Fraunces",serif;font-weight:700;font-size:21px;letter-spacing:.04em}
+.brand-sub{display:block;font-size:11px;letter-spacing:.08em;opacity:.7;font-family:"Instrument Sans",sans-serif;font-weight:500;text-transform:uppercase}
+.navlinks{display:flex;gap:26px;align-items:center;font-size:15px}
+.navlinks a{text-decoration:none;opacity:.85}
+.navlinks a:hover{opacity:1}
+.navlinks .btn{padding:10px 18px;font-size:15px;opacity:1}
+@media(max-width:900px){.navlinks a:not(.btn){display:none}}
+
+/* hero */
+.hero{background:var(--lapis-deep);color:#fff;padding:0;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(1200px 500px at -10% 110%, rgba(43,134,176,.45), transparent 60%),
+  radial-gradient(700px 400px at 40% -20%, rgba(27,60,140,.9), transparent 70%);}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;min-height:calc(100vh - 68px);max-height:900px;padding-top:56px;padding-bottom:56px}
+.hero .eyebrow{color:var(--gold-soft)}
+.hero h1{font-size:clamp(42px,6vw,78px);margin:18px 0 22px}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero p.lede{color:rgba(255,255,255,.82)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero-photo{position:relative;border-radius:200px 200px var(--radius) var(--radius);overflow:hidden;aspect-ratio:3/4;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 20px 16px;font-size:13px;background:linear-gradient(transparent,rgba(0,0,0,.7));color:#fff}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;min-height:0;max-height:none;gap:36px;padding-top:40px}.hero-photo{max-width:440px;aspect-ratio:4/5}}
+
+/* glaze band (Ishtar tiles) */
+.band{height:30px;background:
+  linear-gradient(90deg,var(--gold) 0 2px,transparent 2px) 0 0/34px 100%,
+  repeating-linear-gradient(90deg,var(--lapis) 0 32px,#22489e 32px 34px);
+  position:relative}
+.band::after{content:"";position:absolute;inset:9px 0;background:radial-gradient(circle,var(--gold-soft) 3px,transparent 4px) 8px 0/34px 12px repeat-x}
+
+/* stats */
+.stats{background:var(--paper-2);padding:56px 0}
+.stats .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.stat b{display:block;font-family:"Fraunces",serif;font-size:clamp(38px,4.5vw,56px);color:var(--lapis);line-height:1}
+.stat span{display:block;margin-top:10px;color:var(--muted);font-size:15px;max-width:230px}
+@media(max-width:760px){.stats .grid{grid-template-columns:1fr 1fr;gap:32px 20px}}
+
+/* how we work */
+.how{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.how-list{display:grid;gap:28px;margin-top:8px}
+.how-item{display:grid;grid-template-columns:44px 1fr;gap:18px}
+.how-item .n{width:44px;height:44px;border-radius:50%;background:var(--lapis);color:#fff;display:grid;place-items:center;font-family:"Fraunces",serif;font-weight:600}
+.how-item p{color:var(--muted);margin-top:4px}
+.pledge{margin-top:30px;padding:22px 24px;border-left:4px solid var(--gold);background:#fff;border-radius:0 var(--radius) var(--radius) 0;font-size:16px;color:var(--muted)}
+@media(max-width:900px){.how{grid-template-columns:1fr;gap:36px}}
+
+/* programmes */
+.programmes{background:#fff}
+.prog-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:48px;flex-wrap:wrap}
+.prog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.prog{border-radius:var(--radius);overflow:hidden;background:var(--paper);display:flex;flex-direction:column;border:1px solid var(--line)}
+.prog .ph{aspect-ratio:4/3;overflow:hidden;background:var(--lapis)}
+.prog .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.prog:hover .ph img{transform:scale(1.04)}
+.prog .ph.type{display:grid;place-items:center;color:var(--gold-soft);font-family:"Noto Sans Cuneiform",serif;font-size:64px;background:linear-gradient(135deg,var(--lapis),var(--lapis-deep))}
+.prog .ph.type.clay{background:linear-gradient(135deg,var(--clay),#7d3519)}
+.prog .body{padding:22px 22px 26px}
+.prog p{color:var(--muted);font-size:15.5px;margin-top:8px}
+.prog .tag{display:inline-block;margin-top:14px;font-size:13px;font-weight:600;color:var(--lapis);background:#e3e9f7;padding:4px 10px;border-radius:999px}
+@media(max-width:960px){.prog-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.prog-grid{grid-template-columns:1fr}}
+
+/* giving */
+.give{background:var(--lapis-deep);color:#fff;position:relative;overflow:hidden}
+.give .eyebrow{color:var(--gold-soft)}
+.give .lede{color:rgba(255,255,255,.78)}
+.give-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;margin-top:44px;align-items:start}
+.tiers{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tier{all:unset;cursor:pointer;display:block;padding:18px 18px 16px;border-radius:12px;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.14);transition:all .15s}
+.tier:hover{background:rgba(255,255,255,.1)}
+.tier:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.tier[aria-pressed="true"]{background:var(--gold);color:var(--lapis-deep);border-color:var(--gold)}
+.tier .amt{font-family:"Fraunces",serif;font-size:30px;font-weight:600;line-height:1}
+.tier .amt small{font-size:15px;font-family:"Instrument Sans";font-weight:600;opacity:.75}
+.tier .what{font-size:14.5px;margin-top:8px;opacity:.88;line-height:1.4}
+.bank{background:var(--paper);color:var(--ink);border-radius:18px;padding:28px;position:sticky;top:90px}
+.bank h3{font-size:24px}
+.bank .chosen{margin:10px 0 20px;padding:14px 16px;border-radius:10px;background:#fff6e0;border:1px dashed var(--gold);font-size:15px}
+.bank .chosen b{color:var(--clay)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.row:last-of-type{border-bottom:0}
+.row span{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.row strong{font-family:"Fraunces",serif;font-size:19px;font-weight:600}
+.copy{all:unset;cursor:pointer;font-size:12px;font-weight:600;color:var(--lapis);border:1px solid #c6d1ea;border-radius:999px;padding:4px 10px;margin-left:10px}
+.copy:hover{background:#e3e9f7}
+.bank .note{font-size:14px;color:var(--muted);margin-top:16px}
+@media(max-width:960px){.give-grid{grid-template-columns:1fr}.bank{position:static}}
+@media(max-width:480px){.tiers{grid-template-columns:1fr}}
+
+/* field report */
+.report-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:52px}
+.report-head p{color:var(--muted)}
+.mosaic{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.card{border-radius:var(--radius);overflow:hidden;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
+.card img{width:100%;object-fit:cover;flex:1;min-height:0}
+.card .cap{padding:18px 20px 20px}
+.card .cap h3{font-size:20px}
+.card .cap p{font-size:15px;color:var(--muted);margin-top:6px}
+.c-a{grid-column:span 7}.c-a img{aspect-ratio:4/3}
+.c-b{grid-column:span 5}.c-b img{aspect-ratio:4/3}
+.c-c{grid-column:span 4}.c-c img{aspect-ratio:1/1}
+.c-quote{grid-column:span 4;background:var(--clay);color:#fff;border:0;padding:30px;justify-content:center}
+.c-quote q{font-family:"Fraunces",serif;font-size:24px;line-height:1.25;font-style:italic;quotes:"\201C" "\201D"}
+.c-quote .who{margin-top:16px;font-size:14px;opacity:.85}
+.c-wide{grid-column:span 12;display:grid;grid-template-columns:1fr 1fr;gap:0}
+.c-wide img{height:100%;aspect-ratio:auto}
+.c-wide .cap{padding:34px;display:flex;flex-direction:column;justify-content:center}
+.checks{list-style:none;margin-top:14px;display:grid;gap:10px}
+.checks li{padding-left:26px;position:relative;color:var(--muted);font-size:15.5px}
+.checks li::before{content:"";position:absolute;left:0;top:8px;width:12px;height:12px;border-radius:3px;background:var(--gold);transform:rotate(45deg)}
+@media(max-width:900px){.report-head{grid-template-columns:1fr;gap:16px}.c-a,.c-b,.c-c,.c-quote{grid-column:span 12}.c-wide{grid-template-columns:1fr}.c-wide img{aspect-ratio:4/3}}
+
+/* art */
+.art{background:var(--paper-2)}
+.art-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.art-photo{position:relative}
+.art-photo img{border-radius:var(--radius);width:100%;aspect-ratio:4/3;object-fit:cover}
+.art-photo .badge{position:absolute;right:-14px;bottom:-22px;background:var(--lapis);color:#fff;border-radius:12px;padding:14px 18px;font-size:14px;max-width:240px;box-shadow:0 14px 40px rgba(15,35,87,.3)}
+.art p{color:var(--muted);margin-top:16px}
+.art blockquote{margin-top:26px;font-family:"Fraunces",serif;font-size:23px;line-height:1.3;font-style:italic;color:var(--lapis-deep);border-left:4px solid var(--gold);padding-left:20px}
+.art blockquote cite{display:block;font-family:"Instrument Sans";font-style:normal;font-size:14px;color:var(--muted);margin-top:10px}
+.strip{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:64px}
+.strip figure{border-radius:12px;overflow:hidden;position:relative;aspect-ratio:3/4;background:#ccc}
+.strip img{width:100%;height:100%;object-fit:cover}
+.strip figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 12px 10px;font-size:13px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.72))}
+.tee{margin-top:56px;display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;background:var(--lapis-deep);color:#fff;border-radius:18px;padding:28px 32px}
+.tee .glyph{font-family:"Noto Sans Cuneiform",serif;font-size:56px;color:var(--gold);line-height:1}
+.tee p{color:rgba(255,255,255,.78);font-size:15.5px;margin-top:4px}
+.tee .price{font-family:"Fraunces",serif;font-size:34px;font-weight:600;color:var(--gold-soft)}
+@media(max-width:900px){.art-grid{grid-template-columns:1fr;gap:48px}.strip{grid-template-columns:repeat(2,1fr)}.strip figure:last-child{display:none}.tee{grid-template-columns:1fr;gap:12px}.art-photo .badge{right:12px}}
+
+/* iftar */
+.iftar{padding:0;background:#000;color:#fff;position:relative}
+.iftar .img{position:relative;height:min(78vh,640px)}
+.iftar .img img{width:100%;height:100%;object-fit:cover;opacity:.55}
+.iftar .over{position:absolute;inset:0;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(0,0,0,.7),rgba(0,0,0,.15) 70%)}
+.iftar .over .wrap{padding-bottom:64px;width:100%}
+.iftar .big{font-family:"Fraunces",serif;font-size:clamp(70px,12vw,150px);line-height:.9;color:var(--gold)}
+.iftar h2{max-width:760px;margin-top:10px}
+.iftar p{max-width:620px;color:rgba(255,255,255,.85);margin-top:16px;font-size:18px}
+
+/* timeline */
+.tl{position:relative;margin-top:48px;display:grid;gap:0}
+.tl::before{content:"";position:absolute;left:94px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.tl-item{display:grid;grid-template-columns:80px 30px 1fr;gap:14px;padding:18px 0}
+.tl-item .yr{font-family:"Fraunces",serif;font-size:22px;font-weight:600;color:var(--lapis);text-align:right}
+.tl-item .dot{width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--paper);box-shadow:0 0 0 2px var(--gold);margin:8px auto 0;position:relative;z-index:1}
+.tl-item p{color:var(--muted)}
+.tl-item strong{color:var(--ink)}
+
+/* gallery */
+.gallery{background:#fff}
+.masonry{columns:4 240px;column-gap:14px;margin-top:40px}
+.masonry button{all:unset;cursor:zoom-in;display:block;margin-bottom:14px;border-radius:10px;overflow:hidden;break-inside:avoid}
+.masonry img{width:100%;transition:transform .4s}
+.masonry button:hover img{transform:scale(1.03)}
+.lb{position:fixed;inset:0;background:rgba(10,14,30,.94);display:none;align-items:center;justify-content:center;z-index:100;padding:24px}
+.lb.open{display:flex}
+.lb img{max-height:86vh;max-width:92vw;border-radius:8px}
+.lb button{all:unset;cursor:pointer;position:absolute;color:#fff;font-size:34px;width:52px;height:52px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.08)}
+.lb .x{top:18px;right:18px}.lb .prev{left:14px;top:50%}.lb .next{right:14px;top:50%}
+
+/* trust + contact */
+.trust-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.trust-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:32px}
+.trust-card dl{display:grid;grid-template-columns:auto 1fr;gap:12px 20px;margin-top:18px;font-size:15.5px}
+.trust-card dt{color:var(--muted)}
+.trust-card dd{font-weight:500}
+.people{display:grid;gap:14px;margin-top:18px}
+.person{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.person:last-child{border-bottom:0}
+.person b{display:block}
+.person span{font-size:14px;color:var(--muted)}
+.person a{font-weight:600;color:var(--lapis);text-decoration:none;white-space:nowrap}
+@media(max-width:900px){.trust-grid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:520px){.trust-card{padding:24px 20px}.person{flex-direction:column;align-items:flex-start;gap:4px}.person a{white-space:normal;overflow-wrap:anywhere}.trust-card dl{grid-template-columns:1fr;gap:2px 0}.trust-card dd{margin-bottom:10px}}
+
+/* cta + footer */
+.final{background:var(--gold);text-align:center;padding:88px 0}
+.final h2{color:var(--lapis-deep);max-width:820px;margin:0 auto}
+.final p{color:#4a3510;margin:18px auto 30px;max-width:560px}
+footer{background:var(--lapis-deep);color:rgba(255,255,255,.75);padding:48px 0 40px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-size:28px;margin-right:10px;vertical-align:middle}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(80px);background:var(--ink);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;transition:transform .25s;z-index:200}
+.toast.show{transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="IWAF home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect x="1" y="1" width="38" height="38" rx="10" fill="#e0a83e"/>
+        <path d="M9 11h9l-4.5 6z M22 11h9l-4.5 6z M9 23h9l-4.5 6z M22 23h9l-4.5 6z" fill="#0f2357"/>
+      </svg>
+      <span><span class="brand-name">IWAF</span><span class="brand-sub">Iraqi Women Association Fund</span></span>
+    </a>
+    <div class="navlinks">
+      <a href="#work">Our work</a>
+      <a href="#report">Latest trip</a>
+      <a href="#art">Art</a>
+      <a href="#trust">About us</a>
+      <a class="btn btn-gold" href="#give">Donate</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">UK registered charity 1045994 · Since 1995</div>
+      <h1>Thirty years of <em>showing up</em> for Iraq's orphans and widows.</h1>
+      <p class="lede">We are a small, volunteer-run charity working mainly in Baghdad. We know the schools and families we support by name, and our trustees travel there themselves so your gift arrives where it should.</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="#give" data-tier="sponsor">Sponsor a child · £25 a month</a>
+        <a class="btn btn-ghost" href="#report">See our latest trip</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/hero.jpg" alt="A boy sketching an ancient Assyrian carving at the Iraq Museum in Baghdad">
+      <figcaption>Sketching his ancestors' carvings at the Iraq Museum, Baghdad</figcaption>
+    </figure>
+  </div>
+</header>
+<div class="band" aria-hidden="true"></div>
+
+<section class="stats" aria-label="IWAF in numbers">
+  <div class="wrap grid">
+    <div class="stat reveal"><b>30</b><span>years supporting orphans, widows and families in Iraq</span></div>
+    <div class="stat reveal"><b>650+</b><span>orphaned children at the Baghdad school we sponsor</span></div>
+    <div class="stat reveal"><b>280</b><span>orphans hosted for one unforgettable iftar night in Ramadan 2024</span></div>
+    <div class="stat reveal"><b>100%</b><span>run by volunteers, trustees and friends of the charity</span></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap how">
+    <div class="reveal">
+      <div class="eyebrow">How we work</div>
+      <h2 style="margin-top:14px">Small on purpose.</h2>
+      <p class="lede" style="margin-top:18px">Being small means we can look at every case and every project individually, and make sure each pound reaches the child or family it was given for.</p>
+      <div class="pledge">IWAF is non-political, non-religious and non-racial. We help whoever asks, regardless of colour, religion or ethnicity, and we follow all the rules of the Charity Commission for England and Wales.</div>
+    </div>
+    <div class="how-list">
+      <div class="how-item reveal"><div class="n">1</div><div><h3>We go ourselves</h3><p>Trustees and volunteers spend weeks at a time in Baghdad, at the schools, in family homes and at the centres we support. Even during Covid, our volunteers kept visiting.</p></div></div>
+      <div class="how-item reveal"><div class="n">2</div><div><h3>We listen to the people who know</h3><p>We start every visit with the headteachers and staff, so donations go to what children actually need: uniforms, coats, medicine, glasses, a meal.</p></div></div>
+      <div class="how-item reveal"><div class="n">3</div><div><h3>We help families stand on their own</h3><p>Alongside urgent help, we fund small businesses for widows, so families can earn an income and rely less on handouts.</p></div></div>
+      <div class="how-item reveal"><div class="n">4</div><div><h3>We report back</h3><p>After every trip we share what was done, with photos, with everyone who gave.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="programmes" id="work">
+  <div class="wrap">
+    <div class="prog-head">
+      <div>
+        <div class="eyebrow">Our work</div>
+        <h2 style="margin-top:14px">Where your support goes</h2>
+      </div>
+      <p class="lede">Most of our work happens in and around Baghdad, centred on two orphan schools: Kafil Al-Yateem School for boys and Al-Farah School for girls.</p>
+    </div>
+    <div class="prog-grid">
+      <article class="prog reveal">
+        <div class="ph"><img src="img/p_sponsor.jpg" alt="A smiling boy holding a gift at school" loading="lazy"></div>
+        <div class="body"><h3>Orphan sponsorship</h3><p>A monthly lifeline for a child's family that keeps them off the streets and in school. It costs less than a meal out in London.</p><span class="tag">£25 a month</span></div>
+      </article>
+      <article class="prog reveal">
+        <div class="ph"><img src="img/p_school.jpg" alt="Boys holding up new footballs in the school playground" loading="lazy"></div>
+        <div class="body"><h3>School support</h3><p>Uniforms, winter coats, school bags and stationery, plus the school meal programme we started, so no child learns on an empty stomach.</p><span class="tag">£10 a month feeds a child</span></div>
+      </article>
+      <article class="prog reveal">
+        <div class="ph"><img src="img/p_art.jpg" alt="Girls tracing ancient cuneiform script in an art workshop" loading="lazy"></div>
+        <div class="body"><h3>Art expression workshops</h3><p>Art-based sessions that build confidence, wellbeing and life goals for children affected by war and loss, led by artist and teacher Khulood Da'mi.</p><span class="tag">For four years and counting</span></div>
+      </article>
+      <article class="prog reveal">
+        <div class="ph type" aria-hidden="true">𒀭𒈹</div>
+        <div class="body"><h3>Women's livelihoods</h3><p>Bread-making machines, tanoor ovens, sewing machines and lessons, ice-cream carts and IT courses, so widows can build an income for their families.</p><span class="tag">From £70</span></div>
+      </article>
+      <article class="prog reveal">
+        <div class="ph"><img src="img/p_food.jpg" alt="Food parcels laid out ready for families" loading="lazy" style="object-position:center 30%"></div>
+        <div class="body"><h3>Ramadan &amp; emergency appeals</h3><p>Iftar nights for orphans, food baskets for families in extreme poverty, and help building homes for widows and orphaned families.</p><span class="tag">£10 hosts a child at iftar</span></div>
+      </article>
+      <article class="prog reveal">
+        <div class="ph type clay" aria-hidden="true">𒂼𒄄</div>
+        <div class="body"><h3>Health &amp; disability</h3><p>Medicine and doctor's visits for children who can't afford them, eye glasses, and regular visits to centres for deaf and autistic children, the elderly and a children's cancer hospital.</p><span class="tag">Paid case by case</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="give" id="give">
+  <div class="wrap">
+    <div class="eyebrow">Give</div>
+    <h2 style="margin-top:14px;max-width:760px">Choose what your gift becomes.</h2>
+    <p class="lede" style="margin-top:16px">Pick an amount to see what it does, then donate by bank transfer using the reference shown so we can put your money exactly where you intended. No amount is too small.</p>
+    <div class="give-grid">
+      <div class="tiers" role="group" aria-label="Choose a gift">
+        <button class="tier" data-key="toy" data-amt="£7" data-ref="Toy" data-desc="a toy that puts a smile on a child's face for a long time"><div class="amt">£7</div><div class="what">A toy for a child</div></button>
+        <button class="tier" data-key="iftar" data-amt="£10" data-ref="Orphan Iftar" data-desc="a three-course iftar meal, plus transport to and from school, for one orphan"><div class="amt">£10</div><div class="what">An iftar night out for one orphan</div></button>
+        <button class="tier" data-key="meal" data-amt="£10 a month" data-ref="School Meal" data-desc="a school meal for a hungry child, every month"><div class="amt">£10<small> /month</small></div><div class="what">School meals for a child</div></button>
+        <button class="tier" data-key="uniform" data-amt="£20" data-ref="Uniform" data-desc="a full school uniform for one child"><div class="amt">£20</div><div class="what">A school uniform</div></button>
+        <button class="tier" data-key="sponsor" data-amt="£25 a month" data-ref="Sponsorship" data-desc="a monthly sponsorship that keeps an orphan in school and supports their family" aria-pressed="true"><div class="amt">£25<small> /month</small></div><div class="what">Sponsor an orphan</div></button>
+        <button class="tier" data-key="bread" data-amt="£70" data-ref="Livelihood" data-desc="a bread-making machine so a widow can start earning"><div class="amt">£70</div><div class="what">A bread-making machine for a widow</div></button>
+        <button class="tier" data-key="sew" data-amt="£80 to £100" data-ref="Livelihood" data-desc="a sewing machine, so a woman can take in work and support her family"><div class="amt">£80+</div><div class="what">A sewing machine</div></button>
+        <button class="tier" data-key="tanoor" data-amt="£150" data-ref="Livelihood" data-desc="a tanoor oven to start a small bakery business"><div class="amt">£150</div><div class="what">A tanoor oven for a family business</div></button>
+      </div>
+      <aside class="bank" aria-live="polite">
+        <h3>Donate by bank transfer</h3>
+        <div class="chosen" id="chosen"><b>£25 a month</b> pays for a monthly sponsorship that keeps an orphan in school and supports their family.</div>
+        <div class="row"><span>Account name</span><div><strong>Iraqi Women Association Fund</strong></div></div>
+        <div class="row"><span>Bank</span><div><strong>Metro Bank</strong></div></div>
+        <div class="row"><span>Sort code</span><div><strong>23-05-80</strong><button class="copy" data-copy="230580">Copy</button></div></div>
+        <div class="row"><span>Account no.</span><div><strong>32522701</strong><button class="copy" data-copy="32522701">Copy</button></div></div>
+        <div class="row"><span>Reference</span><div><strong id="ref">Name + Sponsorship</strong><button class="copy" id="refcopy" data-copy="Sponsorship">Copy</button></div></div>
+        <p class="note">Use your first name and the purpose as the reference. For a monthly gift, set up a standing order with your bank. Questions? Email <a href="mailto:iraqiwomenfoundation@gmail.com">iraqiwomenfoundation@gmail.com</a> or call Jinan on <a href="tel:+447944564944">07944 564944</a>.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+<div class="band" aria-hidden="true"></div>
+
+<section id="report">
+  <div class="wrap">
+    <div class="report-head">
+      <div class="reveal">
+        <div class="eyebrow">Field report</div>
+        <h2 style="margin-top:14px">Baghdad, November to December 2025</h2>
+      </div>
+      <p class="reveal">Months in the making. We shipped six boxes and two suitcases of coats, clothing, art supplies, games and stationery, then spent our weekdays at the orphan schools from 9am to 3pm and our weekends visiting widows, orphans and the families many of you sponsor.</p>
+    </div>
+    <div class="mosaic">
+      <figure class="card c-a reveal"><img src="img/t_wattar.jpg" alt="Children and hosts in the courtyard of Al-Wattar Historic House" loading="lazy"><figcaption class="cap"><h3>A day at Al-Wattar Historic House</h3><p>After visiting Al-Mutanabbi Street and the Qishla, the girls were welcomed to Al-Wattar House and invited to paint on the veranda overlooking the Tigris.</p></figcaption></figure>
+      <figure class="card c-b reveal"><img src="img/t_paint.jpg" alt="Boys holding up their paintings at Al-Wattar House" loading="lazy"><figcaption class="cap"><h3>Their first ever earnings</h3><p>The girls' paintings were auctioned days later and every penny went to them, some taking home up to 175,000 IQD. Donations then paid for 22 boys to make the same trip.</p></figcaption></figure>
+      <figure class="card c-c reveal"><img src="img/t_babylon.jpg" alt="A large group of boys in front of the reconstructed Ishtar Gate at Babylon" loading="lazy"><figcaption class="cap"><h3>50 boys at Babylon</h3><p>A first ever school trip to Babylon in Hilla, followed by lunch together.</p></figcaption></figure>
+      <div class="card c-quote reveal"><q>For many, this was their first ever outing and their first ever earnings. Truly a life-changing day.</q><div class="who">Amira, IWAF, on the girls' trip</div></div>
+      <figure class="card c-c reveal"><img src="img/t_park.jpg" alt="Girls on an evening trip to Baghdad's theme park" loading="lazy"><figcaption class="cap"><h3>Theme park days</h3><p>Two trips for younger students to Baghdad's theme park, with entry, a meal, sweets and ice cream covered.</p></figcaption></figure>
+      <div class="card c-wide reveal">
+        <img src="img/t_class.jpg" alt="A volunteer and laughing boys in funny glasses during a classroom workshop" loading="lazy">
+        <div class="cap">
+          <h3>Everything else we did</h3>
+          <ul class="checks">
+            <li>Paid for doctor's visits, medicine and eye glasses for students whose families couldn't afford them, guided by their headteachers.</li>
+            <li>Delivered gifts and school bags to Al-Farah 5 Primary and Secondary School for Orphans.</li>
+            <li>Gave out toys across the wards of a children's cancer hospital that treats under-18s from across Iraq.</li>
+            <li>Returned to the Centre for Deaf Children in Diwaniya with canvases, paints, cross-stitch kits and fruit.</li>
+            <li>Revisited women we had helped set up small businesses, now earning for their families.</li>
+            <li>Learned from Al-Taawn School, which gives 20% of its places to orphans for free.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="art" id="art">
+  <div class="wrap">
+    <div class="art-grid">
+      <div class="reveal">
+        <div class="eyebrow">Art expression</div>
+        <h2 style="margin-top:14px">Art that helps children heal.</h2>
+        <p>Khulood Da'mi is a renowned Iraqi artist, an art teacher by profession and a former trustee of IWAF. Since the 1990s she has trained and worked in therapy through art with children affected by war and violence.</p>
+        <p>She returns to Iraq to spend weeks at a time running at least four workshops a day for children aged 6 to 15 in orphan schools, refugee centres and centres for children with special needs. They make Ramadan lanterns, kites and butterfly wings, and they write in cuneiform, the script their ancestors invented.</p>
+        <blockquote>"In their first visit to the Iraq Museum, the girls stood in front of an artefact their ancestors created a thousand years before Pythagoras' theorem."<cite>Khulood Da'mi</cite></blockquote>
+      </div>
+      <div class="art-photo reveal">
+        <img src="img/khulood.jpg" alt="Khulood Da'mi taking a selfie surrounded by smiling boys" loading="lazy">
+        <div class="badge">"I can't wait to hug them all again."<br><span style="opacity:.75">Khulood, before her next trip</span></div>
+      </div>
+    </div>
+    <div class="strip">
+      <figure class="reveal"><img src="img/a_wings.jpg" alt="A girl wearing paper butterfly wings she made" loading="lazy"><figcaption>Butterfly wings</figcaption></figure>
+      <figure class="reveal"><img src="img/a_lanterns.jpg" alt="Girls holding paper Ramadan lanterns" loading="lazy"><figcaption>Ramadan lanterns</figcaption></figure>
+      <figure class="reveal"><img src="img/a_tablets.jpg" alt="Boys holding clay tablets with cuneiform writing" loading="lazy"><figcaption>Clay tablets in cuneiform</figcaption></figure>
+      <figure class="reveal"><img src="img/a_kites.jpg" alt="Children holding up kites they made" loading="lazy" style="object-position:30% center"><figcaption>Kite day</figcaption></figure>
+      <figure class="reveal"><img src="img/a_museum.jpg" alt="Children exploring the Assyrian gallery at the Iraq Museum" loading="lazy"><figcaption>The Iraq Museum</figcaption></figure>
+    </div>
+    <div class="tee reveal">
+      <div class="glyph" aria-hidden="true">𒂼𒄄</div>
+      <div>
+        <h3>The "Liberty" T-shirt</h3>
+        <p>Hand screen-printed by Khulood, with "Liberty" written in cuneiform, the language of Mesopotamia. Children's sizes 5 to 10 in grey or black, adult S to XL in black. All proceeds go to the charity.</p>
+      </div>
+      <div style="text-align:right">
+        <div class="price">£22</div>
+        <a class="btn btn-gold" style="margin-top:8px" href="https://wa.me/447939128811?text=Hello%2C%20I%27d%20like%20to%20order%20a%20Liberty%20T-shirt">Order on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="iftar" aria-label="Ramadan iftar 2024">
+  <div class="img"><img src="img/i_crowd.jpg" alt="Hundreds of orphaned boys gathered in a restaurant for an iftar meal" loading="lazy"></div>
+  <div class="over"><div class="wrap">
+    <div class="big">280</div>
+    <h2>orphaned boys and girls, one night out.</h2>
+    <p>In Ramadan 2024 we hosted 280 children from the orphan schools for an iftar dinner, a quarter of whom have lost both parents, and 130 boys the following night. For most, it was an experience they had never had. "No one could wipe the smiles off their faces."</p>
+  </div></div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Our story</div>
+    <h2 style="margin-top:14px">Three decades, one promise.</h2>
+    <div class="tl">
+      <div class="tl-item reveal"><div class="yr">1995</div><div class="dot"></div><p><strong>IWAF is founded in the UK</strong> to support impoverished Iraqi orphans, widows and displaced families with food, medicine, shelter, counselling and education.</p></div>
+      <div class="tl-item reveal"><div class="yr">2021</div><div class="dot"></div><p><strong>Through Covid,</strong> volunteers keep visiting families. Eid presents for the children, school uniforms, and a 16-home building project for widows and orphans north of Baghdad.</p></div>
+      <div class="tl-item reveal"><div class="yr">2022</div><div class="dot"></div><p><strong>An urgent clothing appeal</strong> for close to 700 children at Kafil Al-Yateem school, and art workshops with children at the autism centre in Karbala.</p></div>
+      <div class="tl-item reveal"><div class="yr">2024</div><div class="dot"></div><p><strong>Iftar for 280 orphans</strong> and a pioneering school trip to the Iraq Museum, where children met their own history for the first time.</p></div>
+      <div class="tl-item reveal"><div class="yr">2025</div><div class="dot"></div><p><strong>Iftar for 250 children</strong> in Ramadan, then five weeks in Baghdad in November and December: workshops, family visits, healthcare and trips to Babylon and Al-Wattar House.</p></div>
+      <div class="tl-item reveal"><div class="yr">2026</div><div class="dot"></div><p><strong>Ramadan food baskets</strong> for all 80 children of Al-Farah 5 orphan school and their families, each with rice, oil, flour, lentils, chickpeas, sugar, tea, milk, eggs and chicken.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="eyebrow">Gallery</div>
+    <h2 style="margin-top:14px">Moments from the schools</h2>
+    <div class="masonry" id="masonry">
+      <button><img src="img/g2.jpg" alt="Boys laughing with paper moustaches in an art workshop" loading="lazy"></button>
+      <button><img src="img/g4.jpg" alt="Children holding up their drawings in a workshop" loading="lazy"></button>
+      <button><img src="img/g3.jpg" alt="Boys cheering with new footballs" loading="lazy"></button>
+      <button><img src="img/i_serve.jpg" alt="Khulood chatting with boys at the iftar dinner" loading="lazy"></button>
+      <button><img src="img/a_lion.jpg" alt="Boys in front of the Lion of Babylon" loading="lazy"></button>
+      <button><img src="img/g1.jpg" alt="Girls at their desks with Eid presents" loading="lazy"></button>
+      <button><img src="img/g8.jpg" alt="Boys holding up their artwork" loading="lazy"></button>
+      <button><img src="img/t_kishla.jpg" alt="Boys on the Qishla colonnade in Baghdad" loading="lazy"></button>
+      <button><img src="img/g7.jpg" alt="Children holding gift bags above their heads" loading="lazy"></button>
+      <button><img src="img/g10.jpg" alt="Children smiling on the school bus" loading="lazy"></button>
+      <button><img src="img/p_clothes.jpg" alt="New clothes laid out for the children" loading="lazy"></button>
+      <button><img src="img/g5.jpg" alt="Young girls showing their drawings" loading="lazy"></button>
+      <button><img src="img/i_table.jpg" alt="A volunteer talking with boys over dinner" loading="lazy"></button>
+      <button><img src="img/g6.jpg" alt="School group at the Iraq Museum" loading="lazy"></button>
+      <button><img src="img/t_baskets.jpg" alt="Food baskets lined up for families" loading="lazy"></button>
+      <button><img src="img/g9.jpg" alt="Iftar meals packed and ready" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<section id="trust">
+  <div class="wrap trust-grid">
+    <div class="trust-card reveal">
+      <div class="eyebrow">Accountability</div>
+      <h2 style="margin-top:12px;font-size:36px">A registered UK charity</h2>
+      <dl>
+        <dt>Name</dt><dd>Iraqi Women Association Fund (IWAF)</dd>
+        <dt>Charity no.</dt><dd>1045994, England and Wales</dd>
+        <dt>Registered</dt><dd>27 April 1995</dd>
+        <dt>Works in</dt><dd>Iraq, mainly Baghdad, and the UK</dd>
+        <dt>Reporting</dt><dd>Annual returns filed on time</dd>
+      </dl>
+      <p style="margin-top:20px;font-size:15px;color:var(--muted)">Our trustees, committee and volunteers are carefully chosen people of respected standing. <a href="https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/1045994" target="_blank" rel="noopener">View us on the Charity Commission register</a>.</p>
+    </div>
+    <div class="trust-card reveal" id="contact">
+      <div class="eyebrow">Contact</div>
+      <h2 style="margin-top:12px;font-size:36px">Talk to us</h2>
+      <div class="people">
+        <div class="person"><div><b>General enquiries</b><span>Email</span></div><a href="mailto:iraqiwomenfoundation@gmail.com">iraqiwomenfoundation@gmail.com</a></div>
+        <div class="person"><div><b>Jinan Kirwi</b><span>Trustee</span></div><a href="tel:+447944564944">07944 564944</a></div>
+        <div class="person"><div><b>Amira</b><span>IWAF team</span></div><a href="tel:+447766600094">07766 600094</a></div>
+        <div class="person"><div><b>Zena Alogaili</b><span>Donations</span></div><a href="tel:+447763391745">07763 391745</a></div>
+        <div class="person"><div><b>Khulood Da'mi</b><span>Art workshops &amp; T-shirts</span></div><a href="tel:+447939128811">07939 128811</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>£25 a month keeps an orphan in school.</h2>
+    <p>Less than the price of a meal out in London. Please give, and please forward this page to friends and family.</p>
+    <a class="btn btn-ink" href="#give" data-tier="sponsor">Sponsor a child</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><span class="amargi" aria-hidden="true">𒂼𒄄</span>© Iraqi Women Association Fund · Registered charity in England and Wales no. 1045994</div>
+    <div>iraqiwomenfund.org</div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="x" aria-label="Close">×</button>
+  <button class="prev" aria-label="Previous">‹</button>
+  <img alt="">
+  <button class="next" aria-label="Next">›</button>
+</div>
+<div class="toast" id="toast">Copied</div>
+
+<script>
+(function(){
+  // gift picker
+  var tiers=[].slice.call(document.querySelectorAll('.tier'));
+  var chosen=document.getElementById('chosen'), ref=document.getElementById('ref'), refcopy=document.getElementById('refcopy');
+  function pick(t){
+    tiers.forEach(function(x){x.setAttribute('aria-pressed', x===t?'true':'false')});
+    chosen.innerHTML='<b>'+t.dataset.amt+'</b> pays for '+t.dataset.desc+'.';
+    ref.textContent='Name + '+t.dataset.ref;
+    refcopy.dataset.copy=t.dataset.ref;
+  }
+  tiers.forEach(function(t){t.addEventListener('click',function(){pick(t)})});
+  document.querySelectorAll('[data-tier]').forEach(function(a){a.addEventListener('click',function(){
+    var t=document.querySelector('.tier[data-key="'+a.dataset.tier+'"]'); if(t) pick(t);
+  })});
+  // copy
+  var toast=document.getElementById('toast');
+  document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){
+    var v=b.dataset.copy;
+    function done(){toast.textContent='Copied '+v;toast.classList.add('show');setTimeout(function(){toast.classList.remove('show')},1600)}
+    try{navigator.clipboard.writeText(v).then(done,done)}catch(e){done()}
+  })});
+  // reveal
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(e){io.observe(e)});
+  } else els.forEach(function(e){e.classList.add('in')});
+  // lightbox
+  var lb=document.getElementById('lb'), lbimg=lb.querySelector('img');
+  var items=[].slice.call(document.querySelectorAll('#masonry button img')), idx=0;
+  function show(i){idx=(i+items.length)%items.length;lbimg.src=items[idx].src;lbimg.alt=items[idx].alt;lb.classList.add('open')}
+  items.forEach(function(im,i){im.parentNode.addEventListener('click',function(){show(i)})});
+  lb.querySelector('.x').onclick=function(){lb.classList.remove('open')};
+  lb.querySelector('.prev').onclick=function(e){e.stopPropagation();show(idx-1)};
+  lb.querySelector('.next').onclick=function(e){e.stopPropagation();show(idx+1)};
+  lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('open')});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')lb.classList.remove('open');if(e.key==='ArrowLeft')show(idx-1);if(e.key==='ArrowRight')show(idx+1)});
+})();
+</script>
+</body>
+</html>
