@@ -7,7 +7,20 @@
 <meta name="description" content="IWAF is a small, volunteer-run UK charity supporting orphans, widows and families in need in Iraq since 1995. Sponsor a child for £1 a day.">
 <meta property="og:title" content="Iraqi Women Association Fund">
 <meta property="og:description" content="Thirty years of showing up for Iraq's orphans and widows. UK registered charity 1045994.">
-<meta property="og:image" content="img/hero.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://iwaf.vercel.app/">
+<meta property="og:image" content="https://iwaf.vercel.app/img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="£1 a day keeps an orphan in school. Iraqi Women Association Fund, UK registered charity 1045994.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0f2357">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect x='1' y='1' width='38' height='38' rx='10' fill='%23e0a83e'/%3E%3Cpath d='M9 11h9l-4.5 6z M22 11h9l-4.5 6z M9 23h9l-4.5 6z M22 23h9l-4.5 6z' fill='%230f2357'/%3E%3C/svg%3E">
+<link rel="preload" as="image" href="img/hero.jpg">
+<script>document.documentElement.className+=' js'</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NGO","name":"Iraqi Women Association Fund","alternateName":"IWAF","url":"https://iwaf.vercel.app/","email":"iraqiwomenfoundation@gmail.com","foundingDate":"1995-04-27","identifier":"Registered charity in England and Wales no. 1045994","areaServed":["Iraq","United Kingdom"],"description":"A small, volunteer-run UK charity supporting orphans, widows and families in need in Iraq since 1995.","sameAs":["https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/1045994"]}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Instrument+Sans:wght@400;500;600&family=Noto+Sans+Cuneiform&display=swap" rel="stylesheet">
@@ -118,7 +131,7 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .tier .amt{font-family:"Fraunces",serif;font-size:30px;font-weight:600;line-height:1}
 .tier .amt small{font-size:15px;font-family:"Instrument Sans";font-weight:600;opacity:.75}
 .tier .what{font-size:14.5px;margin-top:8px;opacity:.88;line-height:1.4}
-.bank{background:var(--paper);color:var(--ink);border-radius:18px;padding:28px;position:sticky;top:90px}
+.bank{scroll-margin-top:84px;background:var(--paper);color:var(--ink);border-radius:18px;padding:28px;position:sticky;top:90px}
 .bank h3{font-size:24px}
 .bank .chosen{margin:10px 0 20px;padding:14px 16px;border-radius:10px;background:#fff6e0;border:1px dashed var(--gold);font-size:15px}
 .bank .chosen b{color:var(--clay)}
@@ -130,7 +143,9 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .copy:hover{background:#e3e9f7}
 .bank .note{font-size:14px;color:var(--muted);margin-top:16px}
 @media(max-width:960px){.give-grid{grid-template-columns:1fr}.bank{position:static}}
-@media(max-width:480px){.tiers{grid-template-columns:1fr}}
+@media(max-width:480px){.tier{padding:14px 14px 12px}.tier .amt{font-size:25px}.tier .what{font-size:13.5px}}
+.bank .paid-to{font-size:14px;color:var(--muted);margin-top:4px}
+.bank .howto{margin-top:14px;padding:12px 14px;border-radius:10px;background:#e3e9f7;font-size:14.5px;color:var(--lapis-deep)}
 
 /* field report */
 .report-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:52px}
@@ -189,8 +204,10 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 
 /* timeline */
 .tl{position:relative;margin-top:48px;display:grid;gap:0}
-.tl::before{content:"";position:absolute;left:94px;top:8px;bottom:8px;width:2px;background:var(--line)}
-.tl-item{display:grid;grid-template-columns:80px 30px 1fr;gap:14px;padding:18px 0}
+.tl::before{content:"";position:absolute;left:108px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.tl-item{display:grid;grid-template-columns:80px 30px 1fr 150px;column-gap:14px;row-gap:12px;padding:18px 0;align-items:start}
+.tl-item img{width:150px;aspect-ratio:4/3;object-fit:cover;border-radius:10px}
+@media(max-width:700px){.tl::before{left:83px}.tl-item{grid-template-columns:56px 24px 1fr}.tl-item .yr{font-size:19px}.tl-item img{grid-column:3;width:100%;max-width:180px}}
 .tl-item .yr{font-family:"Fraunces",serif;font-size:22px;font-weight:600;color:var(--lapis);text-align:right}
 .tl-item .dot{width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--paper);box-shadow:0 0 0 2px var(--gold);margin:8px auto 0;position:relative;z-index:1}
 .tl-item p{color:var(--muted)}
@@ -198,9 +215,11 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 
 /* gallery */
 .gallery{background:#fff}
-.masonry{columns:4 240px;column-gap:14px;margin-top:40px}
-.masonry button{all:unset;cursor:zoom-in;display:block;margin-bottom:14px;border-radius:10px;overflow:hidden;break-inside:avoid}
-.masonry img{width:100%;transition:transform .4s}
+.masonry{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:40px}
+.masonry button{all:unset;cursor:zoom-in;display:block;border-radius:10px;overflow:hidden;aspect-ratio:1}
+.masonry button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.masonry img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+@media(max-width:700px){.masonry{grid-template-columns:repeat(3,1fr);gap:6px}.masonry button{border-radius:6px}}
 .masonry button:hover img{transform:scale(1.03)}
 .lb{position:fixed;inset:0;background:rgba(10,14,30,.94);display:none;align-items:center;justify-content:center;z-index:100;padding:24px}
 .lb.open{display:flex}
@@ -227,18 +246,26 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .final{background:var(--gold);text-align:center;padding:88px 0}
 .final h2{color:var(--lapis-deep);max-width:820px;margin:0 auto}
 .final p{color:#4a3510;margin:18px auto 30px;max-width:560px}
+.final-ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn-line{border-color:rgba(15,35,87,.4);color:var(--lapis-deep);background:transparent;font-family:inherit}
+.btn-line:hover{background:rgba(255,255,255,.25)}
 footer{background:var(--lapis-deep);color:rgba(255,255,255,.75);padding:48px 0 40px;font-size:14px}
 footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+footer .foot-links{display:flex;gap:20px;flex-wrap:wrap}
+footer a{color:rgba(255,255,255,.85)}
 footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-size:28px;margin-right:10px;vertical-align:middle}
 
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease}
-.reveal.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
-.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(80px);background:var(--ink);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;transition:transform .25s;z-index:200}
-.toast.show{transform:translateX(-50%) translateY(0)}
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(80px);background:var(--ink);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;transition:transform .25s,opacity .25s;z-index:200;opacity:0;pointer-events:none}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.skip{position:absolute;left:12px;top:-60px;z-index:300;background:var(--gold);color:var(--lapis-deep);padding:10px 16px;border-radius:999px;font-weight:600;text-decoration:none}
+.skip:focus{top:12px}
 </style>
 </head>
 <body>
+<a class="skip" href="#about">Skip to content</a>
 
 <nav class="top">
   <div class="wrap">
@@ -271,7 +298,7 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
       </div>
     </div>
     <figure class="hero-photo">
-      <img src="img/hero.jpg" alt="A boy sketching an ancient Assyrian carving at the Iraq Museum in Baghdad">
+      <img src="img/hero.jpg" fetchpriority="high" alt="A boy sketching an ancient Assyrian carving at the Iraq Museum in Baghdad">
       <figcaption>Sketching his ancestors' carvings at the Iraq Museum, Baghdad</figcaption>
     </figure>
   </div>
@@ -281,8 +308,8 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
 <section class="stats" aria-label="IWAF in numbers">
   <div class="wrap grid">
     <div class="stat reveal"><b>30</b><span>years supporting orphans, widows and families in Iraq</span></div>
-    <div class="stat reveal"><b>650+</b><span>orphaned children at the Baghdad school we sponsor</span></div>
-    <div class="stat reveal"><b>280</b><span>orphans hosted for one unforgettable iftar night in Ramadan 2024</span></div>
+    <div class="stat reveal"><b>650+</b><span>orphaned children across the Al-Farah schools we support</span></div>
+    <div class="stat reveal"><b>5 weeks</b><span>in Baghdad on our last trip, at the schools every weekday</span></div>
     <div class="stat reveal"><b>100%</b><span>run by volunteers, trustees and friends of the charity</span></div>
   </div>
 </section>
@@ -299,7 +326,7 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
       <div class="how-item reveal"><div class="n">1</div><div><h3>We go ourselves</h3><p>Trustees and volunteers spend weeks at a time in Baghdad, at the schools, in family homes and at the centres we support. Even during Covid, our volunteers kept visiting.</p></div></div>
       <div class="how-item reveal"><div class="n">2</div><div><h3>We listen to the people who know</h3><p>We start every visit with the headteachers and staff, so donations go to what children actually need: uniforms, coats, medicine, glasses, a meal.</p></div></div>
       <div class="how-item reveal"><div class="n">3</div><div><h3>We help families stand on their own</h3><p>Alongside urgent help, we fund small businesses for widows, so families can earn an income and rely less on handouts.</p></div></div>
-      <div class="how-item reveal"><div class="n">4</div><div><h3>We report back</h3><p>After every trip we share what was done, with photos, with everyone who gave.</p></div></div>
+      <div class="how-item reveal"><div class="n">4</div><div><h3>We report back</h3><p>After every trip we share what was done, with photos, with everyone who gave. <a href="#report" style="color:var(--lapis);font-weight:600">Read the latest report</a>.</p></div></div>
     </div>
   </div>
 </section>
@@ -351,22 +378,24 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
       <div class="tiers" role="group" aria-label="Choose a gift">
         <button class="tier" data-key="toy" data-amt="£7" data-ref="Toy" data-desc="a toy that puts a smile on a child's face for a long time"><div class="amt">£7</div><div class="what">A toy for a child</div></button>
         <button class="tier" data-key="iftar" data-amt="£10" data-ref="Orphan Iftar" data-desc="a three-course iftar meal, plus transport to and from school, for one orphan"><div class="amt">£10</div><div class="what">An iftar night out for one orphan</div></button>
-        <button class="tier" data-key="meal" data-amt="£10 a month" data-ref="School Meal" data-desc="a school meal for a hungry child, every month"><div class="amt">£10<small> /month</small></div><div class="what">School meals for a child</div></button>
+        <button class="tier" data-key="meal" data-monthly="1" data-amt="£10 a month" data-ref="School Meal" data-desc="a school meal for a hungry child, every month"><div class="amt">£10<small> /month</small></div><div class="what">School meals for a child</div></button>
         <button class="tier" data-key="uniform" data-amt="£20" data-ref="Uniform" data-desc="a full school uniform for one child"><div class="amt">£20</div><div class="what">A school uniform</div></button>
-        <button class="tier" data-key="sponsor" data-amt="£30 a month" data-ref="Sponsorship" data-desc="£1 a day to keep one of the poorest orphans in school and support their family" aria-pressed="true"><div class="amt">£30<small> /month</small></div><div class="what">Sponsor an orphan, £1 a day</div></button>
+        <button class="tier" data-key="sponsor" data-monthly="1" data-amt="£30 a month" data-ref="Sponsorship" data-desc="£1 a day to keep one of the poorest orphans in school and support their family" aria-pressed="true"><div class="amt">£30<small> /month</small></div><div class="what">Sponsor an orphan, £1 a day</div></button>
         <button class="tier" data-key="bread" data-amt="£70" data-ref="Livelihood" data-desc="a bread-making machine so a widow can start earning"><div class="amt">£70</div><div class="what">A bread-making machine for a widow</div></button>
         <button class="tier" data-key="sew" data-amt="£80 to £100" data-ref="Livelihood" data-desc="a sewing machine, so a woman can take in work and support her family"><div class="amt">£80+</div><div class="what">A sewing machine</div></button>
         <button class="tier" data-key="tanoor" data-amt="£150" data-ref="Livelihood" data-desc="a tanoor oven to start a small bakery business"><div class="amt">£150</div><div class="what">A tanoor oven for a family business</div></button>
       </div>
       <aside class="bank" aria-live="polite">
         <h3>Donate by bank transfer</h3>
+        <p class="paid-to">Straight into the charity's own account. Registered charity 1045994.</p>
         <div class="chosen" id="chosen"><b>£30 a month</b> pays for £1 a day to keep one of the poorest orphans in school and support their family.</div>
         <div class="row"><span>Account name</span><div><strong>Iraqi Women Association Fund</strong></div></div>
         <div class="row"><span>Bank</span><div><strong>Metro Bank</strong></div></div>
         <div class="row"><span>Sort code</span><div><strong>23-05-80</strong><button class="copy" data-copy="230580">Copy</button></div></div>
         <div class="row"><span>Account no.</span><div><strong>32522701</strong><button class="copy" data-copy="32522701">Copy</button></div></div>
         <div class="row"><span>Reference</span><div><strong id="ref">Name + Sponsorship</strong><button class="copy" id="refcopy" data-copy="Sponsorship">Copy</button></div></div>
-        <p class="note">Use your first name and the purpose as the reference. For a monthly gift, set up a standing order with your bank. Questions? Email <a href="mailto:iraqiwomenfoundation@gmail.com">iraqiwomenfoundation@gmail.com</a>.</p>
+        <p class="howto" id="howto">This is a monthly gift. In your banking app, set it up as a <b>standing order</b> so it goes every month.</p>
+        <p class="note">Use your first name and the purpose as the reference. Questions? Email <a href="mailto:iraqiwomenfoundation@gmail.com">iraqiwomenfoundation@gmail.com</a>.</p>
       </aside>
     </div>
   </div>
@@ -460,11 +489,11 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
     <h2 style="margin-top:14px">Three decades, one promise.</h2>
     <div class="tl">
       <div class="tl-item reveal"><div class="yr">1995</div><div class="dot"></div><p><strong>IWAF is founded in the UK</strong> to support impoverished Iraqi orphans, widows and displaced families with food, medicine, shelter, counselling and education.</p></div>
-      <div class="tl-item reveal"><div class="yr">2021</div><div class="dot"></div><p><strong>Through Covid,</strong> volunteers keep visiting families. Eid presents for the children, school uniforms, and a 16-home building project for widows and orphans north of Baghdad.</p></div>
-      <div class="tl-item reveal"><div class="yr">2022</div><div class="dot"></div><p><strong>An urgent clothing appeal</strong> for close to 700 children at Kafil Al-Yateem school (now Al-Farah), and art workshops with children at the autism centre in Karbala.</p></div>
-      <div class="tl-item reveal"><div class="yr">2024</div><div class="dot"></div><p><strong>Iftar for 280 orphans</strong> and a pioneering school trip to the Iraq Museum, where children met their own history for the first time.</p></div>
-      <div class="tl-item reveal"><div class="yr">2025</div><div class="dot"></div><p><strong>Iftar for 250 children</strong> in Ramadan, then five weeks in Baghdad in November and December: workshops, family visits, healthcare and trips to Babylon and Al-Wattar House.</p></div>
-      <div class="tl-item reveal"><div class="yr">2026</div><div class="dot"></div><p><strong>Ramadan food baskets</strong> for all 80 children of Al-Farah 5 orphan school and their families, each with rice, oil, flour, lentils, chickpeas, sugar, tea, milk, eggs and chicken.</p></div>
+      <div class="tl-item reveal"><div class="yr">2021</div><div class="dot"></div><p><strong>Through Covid,</strong> volunteers keep visiting families. Eid presents for the children, school uniforms, and a 16-home building project for widows and orphans north of Baghdad.</p><img src="img/p_homes.jpg" alt="Concrete being poured for the homes built for widows and orphans north of Baghdad" loading="lazy"></div>
+      <div class="tl-item reveal"><div class="yr">2022</div><div class="dot"></div><p><strong>An urgent clothing appeal</strong> for close to 700 children at Kafil Al-Yateem school (now Al-Farah), and art workshops with children at the autism centre in Karbala.</p><img src="img/p_clothes.jpg" alt="New clothes laid out for the children" loading="lazy"></div>
+      <div class="tl-item reveal"><div class="yr">2024</div><div class="dot"></div><p><strong>Iftar for 280 orphans</strong> and a pioneering school trip to the Iraq Museum, where children met their own history for the first time.</p><img src="img/g6.jpg" alt="Schoolgirls on their first visit to the Iraq Museum" loading="lazy"></div>
+      <div class="tl-item reveal"><div class="yr">2025</div><div class="dot"></div><p><strong>Iftar for 250 children</strong> in Ramadan, then five weeks in Baghdad in November and December: workshops, family visits, healthcare and trips to Babylon and Al-Wattar House.</p><img src="img/t_babylon.jpg" alt="Boys from the orphan school at the Ishtar Gate in Babylon" loading="lazy"></div>
+      <div class="tl-item reveal"><div class="yr">2026</div><div class="dot"></div><p><strong>Ramadan food baskets</strong> for all 80 children of Al-Farah 5 orphan school and their families, each with rice, oil, flour, lentils, chickpeas, sugar, tea, milk, eggs and chicken.</p><img src="img/t_baskets.jpg" alt="Ramadan food baskets lined up for families" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -473,22 +502,23 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
   <div class="wrap">
     <div class="eyebrow">Gallery</div>
     <h2 style="margin-top:14px">Moments from the schools</h2>
+    <p class="lede" style="margin-top:14px">Tap any photo to see it full size.</p>
     <div class="masonry" id="masonry">
-      <button><img src="img/g2.jpg" alt="Boys laughing with paper moustaches in an art workshop" loading="lazy"></button>
-      <button><img src="img/g4.jpg" alt="Children holding up their drawings in a workshop" loading="lazy"></button>
-      <button><img src="img/g3.jpg" alt="Boys cheering with new footballs" loading="lazy"></button>
-      <button><img src="img/i_serve.jpg" alt="Khulood chatting with boys at the iftar dinner" loading="lazy"></button>
-      <button><img src="img/a_lion.jpg" alt="Boys in front of the Lion of Babylon" loading="lazy"></button>
-      <button><img src="img/g1.jpg" alt="Girls at their desks with Eid presents" loading="lazy"></button>
-      <button><img src="img/t_kishla.jpg" alt="Boys on the Qishla colonnade in Baghdad" loading="lazy"></button>
-      <button><img src="img/g7.jpg" alt="Children holding gift bags above their heads" loading="lazy"></button>
-      <button><img src="img/g10.jpg" alt="Children smiling on the school bus" loading="lazy"></button>
-      <button><img src="img/p_clothes.jpg" alt="New clothes laid out for the children" loading="lazy"></button>
-      <button><img src="img/g5.jpg" alt="Young girls showing their drawings" loading="lazy"></button>
-      <button><img src="img/i_table.jpg" alt="A volunteer talking with boys over dinner" loading="lazy"></button>
-      <button><img src="img/g6.jpg" alt="School group at the Iraq Museum" loading="lazy"></button>
-      <button><img src="img/t_baskets.jpg" alt="Food baskets lined up for families" loading="lazy"></button>
-      <button><img src="img/g9.jpg" alt="Iftar meals packed and ready" loading="lazy"></button>
+      <button aria-label="View photo"><img src="img/g2.jpg" alt="Boys laughing with paper moustaches in an art workshop" loading="lazy"></button>
+      <button aria-label="View photo"><img src="img/g4.jpg" alt="Children holding up their drawings in a workshop" loading="lazy"></button>
+      <button aria-label="View photo"><img src="img/g3.jpg" alt="Boys cheering with new footballs" loading="lazy"></button>
+      <button aria-label="View photo"><img src="img/i_serve.jpg" alt="Khulood chatting with boys at the iftar dinner" loading="lazy"></button>
+      <button aria-label="View photo"><img src="img/a_lion.jpg" alt="Boys in front of the Lion of Babylon" loading="lazy"></button>
+      <button aria-label="View photo"><img src="img/g1.jpg" alt="Girls at their desks with Eid presents" loading="lazy"></button>
+      <button aria-label="View photo"><img src="img/t_kishla.jpg" alt="Boys on the Qishla colonnade in Baghdad" loading="lazy"></button>
+      <button aria-label="View photo"><img src="img/g7.jpg" alt="Children holding gift bags above their heads" loading="lazy"></button>
+      <button aria-label="View photo"><img src="img/g10.jpg" alt="Children smiling on the school bus" loading="lazy"></button>
+      <button aria-label="View photo"><img src="img/p_clothes.jpg" alt="New clothes laid out for the children" loading="lazy"></button>
+      <button aria-label="View photo"><img src="img/g5.jpg" alt="Young girls showing their drawings" loading="lazy"></button>
+      <button aria-label="View photo"><img src="img/i_table.jpg" alt="A volunteer talking with boys over dinner" loading="lazy"></button>
+      <button aria-label="View photo"><img src="img/g6.jpg" alt="School group at the Iraq Museum" loading="lazy"></button>
+      <button aria-label="View photo"><img src="img/t_baskets.jpg" alt="Food baskets lined up for families" loading="lazy"></button>
+      <button aria-label="View photo"><img src="img/g9.jpg" alt="Iftar meals packed and ready" loading="lazy"></button>
     </div>
   </div>
 </section>
@@ -523,14 +553,18 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
   <div class="wrap">
     <h2>£1 a day keeps an orphan in school.</h2>
     <p>Less than the price of a meal out in London. Please give, and please forward this page to friends and family.</p>
-    <a class="btn btn-ink" href="#give" data-tier="sponsor">Sponsor a child</a>
+    <div class="final-ctas">
+      <a class="btn btn-ink" href="#give" data-tier="sponsor">Sponsor a child</a>
+      <a class="btn btn-line" id="share-wa" href="https://wa.me/?text=%C2%A31%20a%20day%20keeps%20an%20orphan%20in%20school%20in%20Baghdad.%20Iraqi%20Women%20Association%20Fund%2C%20UK%20charity%201045994%3A%20https%3A%2F%2Fiwaf.vercel.app%2F" target="_blank" rel="noopener">Share on WhatsApp</a>
+      <button class="btn btn-line" id="share-copy" type="button">Copy link</button>
+    </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     <div><span class="amargi" aria-hidden="true">𒂼𒄄</span>© Iraqi Women Association Fund · Registered charity in England and Wales no. 1045994</div>
-    <div>iraqiwomenfund.org</div>
+    <div class="foot-links"><a href="mailto:iraqiwomenfoundation@gmail.com">iraqiwomenfoundation@gmail.com</a><a href="https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/1045994" target="_blank" rel="noopener">Charity Commission register</a></div>
   </div>
 </footer>
 
@@ -547,21 +581,33 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
   // gift picker
   var tiers=[].slice.call(document.querySelectorAll('.tier'));
   var chosen=document.getElementById('chosen'), ref=document.getElementById('ref'), refcopy=document.getElementById('refcopy');
-  function pick(t){
+  var bank=document.querySelector('.bank'), howto=document.getElementById('howto');
+  function pick(t,fromTap){
     tiers.forEach(function(x){x.setAttribute('aria-pressed', x===t?'true':'false')});
+    howto.innerHTML=t.dataset.monthly?'This is a monthly gift. In your banking app, set it up as a <b>standing order</b> so it goes every month.':'This is a one-off gift. Make a single bank transfer from your banking app using the details above.';
+    if(fromTap && window.innerWidth<960){var r=bank.getBoundingClientRect(); if(r.top>window.innerHeight*.6) bank.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})}
     chosen.innerHTML='<b>'+t.dataset.amt+'</b> pays for '+t.dataset.desc+'.';
     ref.textContent='Name + '+t.dataset.ref;
     refcopy.dataset.copy=t.dataset.ref;
   }
-  tiers.forEach(function(t){t.addEventListener('click',function(){pick(t)})});
+  tiers.forEach(function(t){t.addEventListener('click',function(){pick(t,true)})});
   document.querySelectorAll('[data-tier]').forEach(function(a){a.addEventListener('click',function(){
     var t=document.querySelector('.tier[data-key="'+a.dataset.tier+'"]'); if(t) pick(t);
   })});
   // copy
   var toast=document.getElementById('toast');
+  function say(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(say.t);say.t=setTimeout(function(){toast.classList.remove('show')},1800)}
+  // share
+  var url=location.protocol.indexOf('http')===0?location.origin+location.pathname:'https://iwaf.vercel.app/';
+  var msg='£1 a day keeps an orphan in school in Baghdad. Iraqi Women Association Fund, UK charity 1045994: '+url;
+  document.getElementById('share-wa').href='https://wa.me/?text='+encodeURIComponent(msg);
+  document.getElementById('share-copy').addEventListener('click',function(){
+    if(navigator.share){navigator.share({title:'Iraqi Women Association Fund',text:'£1 a day keeps an orphan in school in Baghdad.',url:url}).catch(function(){});return}
+    try{navigator.clipboard.writeText(url).then(function(){say('Link copied')},function(){say(url)})}catch(e){say(url)}
+  });
   document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){
     var v=b.dataset.copy;
-    function done(){toast.textContent='Copied '+v;toast.classList.add('show');setTimeout(function(){toast.classList.remove('show')},1600)}
+    function done(){say('Copied '+v)}
     try{navigator.clipboard.writeText(v).then(done,done)}catch(e){done()}
   })});
   // reveal
@@ -573,13 +619,15 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
   // lightbox
   var lb=document.getElementById('lb'), lbimg=lb.querySelector('img');
   var items=[].slice.call(document.querySelectorAll('#masonry button img')), idx=0;
-  function show(i){idx=(i+items.length)%items.length;lbimg.src=items[idx].src;lbimg.alt=items[idx].alt;lb.classList.add('open')}
-  items.forEach(function(im,i){im.parentNode.addEventListener('click',function(){show(i)})});
-  lb.querySelector('.x').onclick=function(){lb.classList.remove('open')};
+  var opener=null, xbtn=lb.querySelector('.x');
+  function show(i){idx=(i+items.length)%items.length;lbimg.src=items[idx].src;lbimg.alt=items[idx].alt;if(!lb.classList.contains('open')){lb.classList.add('open');xbtn.focus()}}
+  function close(){lb.classList.remove('open');if(opener)opener.focus()}
+  items.forEach(function(im,i){im.parentNode.addEventListener('click',function(){opener=im.parentNode;show(i)})});
+  xbtn.onclick=close;
   lb.querySelector('.prev').onclick=function(e){e.stopPropagation();show(idx-1)};
   lb.querySelector('.next').onclick=function(e){e.stopPropagation();show(idx+1)};
-  lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('open')});
-  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')lb.classList.remove('open');if(e.key==='ArrowLeft')show(idx-1);if(e.key==='ArrowRight')show(idx+1)});
+  lb.addEventListener('click',function(e){if(e.target===lb)close()});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(idx-1);if(e.key==='ArrowRight')show(idx+1)});
 })();
 </script>
 </body>
