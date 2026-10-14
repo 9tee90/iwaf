@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "iwaf.vercel.app" }],
+      "destination": "https://iraqiwomenfund.org/$1",
+      "permanent": true
+    }
+  ]
+}
