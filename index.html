@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Iraqi Women Association Fund (IWAF) | Registered charity 1045994</title>
-<meta name="description" content="IWAF is a small, volunteer-run UK charity supporting orphans, widows and families in need in Iraq since 1995. Sponsor a child from £25 a month.">
+<meta name="description" content="IWAF is a small, volunteer-run UK charity supporting orphans, widows and families in need in Iraq since 1995. Sponsor a child for £1 a day.">
 <meta property="og:title" content="Iraqi Women Association Fund">
 <meta property="og:description" content="Thirty years of showing up for Iraq's orphans and widows. UK registered charity 1045994.">
 <meta property="og:image" content="img/hero.jpg">
@@ -164,6 +164,9 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .art p{color:var(--muted);margin-top:16px}
 .art blockquote{margin-top:26px;font-family:"Fraunces",serif;font-size:23px;line-height:1.3;font-style:italic;color:var(--lapis-deep);border-left:4px solid var(--gold);padding-left:20px}
 .art blockquote cite{display:block;font-family:"Instrument Sans";font-style:normal;font-size:14px;color:var(--muted);margin-top:10px}
+.museum{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:72px}
+.museum blockquote{margin-top:0;font-size:clamp(22px,2.4vw,28px)}
+.museum img{width:100%;border-radius:var(--radius);aspect-ratio:3/2;object-fit:cover}
 .strip{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:64px}
 .strip figure{border-radius:12px;overflow:hidden;position:relative;aspect-ratio:3/4;background:#ccc}
 .strip img{width:100%;height:100%;object-fit:cover}
@@ -172,7 +175,7 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .tee .glyph{font-family:"Noto Sans Cuneiform",serif;font-size:56px;color:var(--gold);line-height:1}
 .tee p{color:rgba(255,255,255,.78);font-size:15.5px;margin-top:4px}
 .tee .price{font-family:"Fraunces",serif;font-size:34px;font-weight:600;color:var(--gold-soft)}
-@media(max-width:900px){.art-grid{grid-template-columns:1fr;gap:48px}.strip{grid-template-columns:repeat(2,1fr)}.strip figure:last-child{display:none}.tee{grid-template-columns:1fr;gap:12px}.art-photo .badge{right:12px}}
+@media(max-width:900px){.art-grid{grid-template-columns:1fr;gap:48px}.strip{grid-template-columns:repeat(2,1fr)}.strip figure:last-child{display:none}.tee{grid-template-columns:1fr;gap:12px}.art-photo .badge{right:12px}.museum{grid-template-columns:1fr;gap:24px;margin-top:56px}}
 
 /* iftar */
 .iftar{padding:0;background:#000;color:#fff;position:relative}
@@ -263,7 +266,7 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
       <h1>Thirty years of <em>showing up</em> for Iraq's orphans and widows.</h1>
       <p class="lede">We are a small, volunteer-run charity working mainly in Baghdad. We know the schools and families we support by name, and our trustees travel there themselves so your gift arrives where it should.</p>
       <div class="ctas">
-        <a class="btn btn-gold" href="#give" data-tier="sponsor">Sponsor a child · £25 a month</a>
+        <a class="btn btn-gold" href="#give" data-tier="sponsor">Sponsor a child · £1 a day</a>
         <a class="btn btn-ghost" href="#report">See our latest trip</a>
       </div>
     </div>
@@ -308,16 +311,16 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
         <div class="eyebrow">Our work</div>
         <h2 style="margin-top:14px">Where your support goes</h2>
       </div>
-      <p class="lede">Most of our work happens in and around Baghdad, centred on two orphan schools: Kafil Al-Yateem School for boys and Al-Farah School for girls.</p>
+      <p class="lede">Most of our work happens in and around Baghdad, centred on the Al-Farah group of orphan schools for boys and girls, previously known as Kafil Al-Yateem.</p>
     </div>
     <div class="prog-grid">
       <article class="prog reveal">
         <div class="ph"><img src="img/p_sponsor.jpg" alt="A smiling boy holding a gift at school" loading="lazy"></div>
-        <div class="body"><h3>Orphan sponsorship</h3><p>A monthly lifeline for a child's family that keeps them off the streets and in school. It costs less than a meal out in London.</p><span class="tag">£25 a month</span></div>
+        <div class="body"><h3>Orphan sponsorship</h3><p>£1 a day keeps one of the poorest children in school, and off the streets. A monthly lifeline for their family that costs less than a meal out in London.</p><span class="tag">£1 a day · £30 a month</span></div>
       </article>
       <article class="prog reveal">
         <div class="ph"><img src="img/p_school.jpg" alt="Boys holding up new footballs in the school playground" loading="lazy"></div>
-        <div class="body"><h3>School support</h3><p>Uniforms, winter coats, school bags and stationery, plus the school meal programme we started, so no child learns on an empty stomach.</p><span class="tag">£10 a month feeds a child</span></div>
+        <div class="body"><h3>Al-Farah orphan schools</h3><p>Across the Al-Farah group of orphan schools in Baghdad (previously Kafil Al-Yateem) we fund school meals, clothing and medical support, so no child learns hungry, cold or unwell.</p><span class="tag">£10 a month feeds a child</span></div>
       </article>
       <article class="prog reveal">
         <div class="ph"><img src="img/p_art.jpg" alt="Girls tracing ancient cuneiform script in an art workshop" loading="lazy"></div>
@@ -350,14 +353,14 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
         <button class="tier" data-key="iftar" data-amt="£10" data-ref="Orphan Iftar" data-desc="a three-course iftar meal, plus transport to and from school, for one orphan"><div class="amt">£10</div><div class="what">An iftar night out for one orphan</div></button>
         <button class="tier" data-key="meal" data-amt="£10 a month" data-ref="School Meal" data-desc="a school meal for a hungry child, every month"><div class="amt">£10<small> /month</small></div><div class="what">School meals for a child</div></button>
         <button class="tier" data-key="uniform" data-amt="£20" data-ref="Uniform" data-desc="a full school uniform for one child"><div class="amt">£20</div><div class="what">A school uniform</div></button>
-        <button class="tier" data-key="sponsor" data-amt="£25 a month" data-ref="Sponsorship" data-desc="a monthly sponsorship that keeps an orphan in school and supports their family" aria-pressed="true"><div class="amt">£25<small> /month</small></div><div class="what">Sponsor an orphan</div></button>
+        <button class="tier" data-key="sponsor" data-amt="£30 a month" data-ref="Sponsorship" data-desc="£1 a day to keep one of the poorest orphans in school and support their family" aria-pressed="true"><div class="amt">£30<small> /month</small></div><div class="what">Sponsor an orphan, £1 a day</div></button>
         <button class="tier" data-key="bread" data-amt="£70" data-ref="Livelihood" data-desc="a bread-making machine so a widow can start earning"><div class="amt">£70</div><div class="what">A bread-making machine for a widow</div></button>
         <button class="tier" data-key="sew" data-amt="£80 to £100" data-ref="Livelihood" data-desc="a sewing machine, so a woman can take in work and support her family"><div class="amt">£80+</div><div class="what">A sewing machine</div></button>
         <button class="tier" data-key="tanoor" data-amt="£150" data-ref="Livelihood" data-desc="a tanoor oven to start a small bakery business"><div class="amt">£150</div><div class="what">A tanoor oven for a family business</div></button>
       </div>
       <aside class="bank" aria-live="polite">
         <h3>Donate by bank transfer</h3>
-        <div class="chosen" id="chosen"><b>£25 a month</b> pays for a monthly sponsorship that keeps an orphan in school and supports their family.</div>
+        <div class="chosen" id="chosen"><b>£30 a month</b> pays for £1 a day to keep one of the poorest orphans in school and support their family.</div>
         <div class="row"><span>Account name</span><div><strong>Iraqi Women Association Fund</strong></div></div>
         <div class="row"><span>Bank</span><div><strong>Metro Bank</strong></div></div>
         <div class="row"><span>Sort code</span><div><strong>23-05-80</strong><button class="copy" data-copy="230580">Copy</button></div></div>
@@ -411,12 +414,15 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
         <h2 style="margin-top:14px">Art that helps children heal.</h2>
         <p>Khulood Da'mi is a renowned Iraqi artist, an art teacher by profession and a former trustee of IWAF. Since the 1990s she has trained and worked in therapy through art with children affected by war and violence.</p>
         <p>She returns to Iraq to spend weeks at a time running at least four workshops a day for children aged 6 to 15 in orphan schools, refugee centres and centres for children with special needs. They make Ramadan lanterns, kites and butterfly wings, and they write in cuneiform, the script their ancestors invented.</p>
-        <blockquote>"In their first visit to the Iraq Museum, the girls stood in front of an artefact their ancestors created a thousand years before Pythagoras' theorem."<cite>Khulood Da'mi</cite></blockquote>
       </div>
       <div class="art-photo reveal">
         <img src="img/khulood.jpg" alt="Khulood Da'mi taking a selfie surrounded by smiling boys" loading="lazy">
         <div class="badge">"I can't wait to hug them all again."<br><span style="opacity:.75">Khulood, before her next trip</span></div>
       </div>
+    </div>
+    <div class="museum reveal">
+      <img src="img/a_pythagoras.jpg" alt="Schoolgirls at the Iraq Museum looking at an ancient Babylonian mathematical tablet" loading="lazy">
+      <blockquote>"In their first visit to the Iraq Museum, the girls stood in front of an artefact their ancestors created a thousand years before Pythagoras' theorem."<cite>Khulood Da'mi, at the Iraq Museum, Baghdad</cite></blockquote>
     </div>
     <div class="strip">
       <figure class="reveal"><img src="img/a_wings.jpg" alt="A girl wearing paper butterfly wings she made" loading="lazy"><figcaption>Butterfly wings</figcaption></figure>
@@ -455,7 +461,7 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
     <div class="tl">
       <div class="tl-item reveal"><div class="yr">1995</div><div class="dot"></div><p><strong>IWAF is founded in the UK</strong> to support impoverished Iraqi orphans, widows and displaced families with food, medicine, shelter, counselling and education.</p></div>
       <div class="tl-item reveal"><div class="yr">2021</div><div class="dot"></div><p><strong>Through Covid,</strong> volunteers keep visiting families. Eid presents for the children, school uniforms, and a 16-home building project for widows and orphans north of Baghdad.</p></div>
-      <div class="tl-item reveal"><div class="yr">2022</div><div class="dot"></div><p><strong>An urgent clothing appeal</strong> for close to 700 children at Kafil Al-Yateem school, and art workshops with children at the autism centre in Karbala.</p></div>
+      <div class="tl-item reveal"><div class="yr">2022</div><div class="dot"></div><p><strong>An urgent clothing appeal</strong> for close to 700 children at Kafil Al-Yateem school (now Al-Farah), and art workshops with children at the autism centre in Karbala.</p></div>
       <div class="tl-item reveal"><div class="yr">2024</div><div class="dot"></div><p><strong>Iftar for 280 orphans</strong> and a pioneering school trip to the Iraq Museum, where children met their own history for the first time.</p></div>
       <div class="tl-item reveal"><div class="yr">2025</div><div class="dot"></div><p><strong>Iftar for 250 children</strong> in Ramadan, then five weeks in Baghdad in November and December: workshops, family visits, healthcare and trips to Babylon and Al-Wattar House.</p></div>
       <div class="tl-item reveal"><div class="yr">2026</div><div class="dot"></div><p><strong>Ramadan food baskets</strong> for all 80 children of Al-Farah 5 orphan school and their families, each with rice, oil, flour, lentils, chickpeas, sugar, tea, milk, eggs and chicken.</p></div>
@@ -474,7 +480,6 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
       <button><img src="img/i_serve.jpg" alt="Khulood chatting with boys at the iftar dinner" loading="lazy"></button>
       <button><img src="img/a_lion.jpg" alt="Boys in front of the Lion of Babylon" loading="lazy"></button>
       <button><img src="img/g1.jpg" alt="Girls at their desks with Eid presents" loading="lazy"></button>
-      <button><img src="img/g8.jpg" alt="Boys holding up their artwork" loading="lazy"></button>
       <button><img src="img/t_kishla.jpg" alt="Boys on the Qishla colonnade in Baghdad" loading="lazy"></button>
       <button><img src="img/g7.jpg" alt="Children holding gift bags above their heads" loading="lazy"></button>
       <button><img src="img/g10.jpg" alt="Children smiling on the school bus" loading="lazy"></button>
@@ -516,7 +521,7 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
 
 <section class="final">
   <div class="wrap">
-    <h2>£25 a month keeps an orphan in school.</h2>
+    <h2>£1 a day keeps an orphan in school.</h2>
     <p>Less than the price of a meal out in London. Please give, and please forward this page to friends and family.</p>
     <a class="btn btn-ink" href="#give" data-tier="sponsor">Sponsor a child</a>
   </div>
