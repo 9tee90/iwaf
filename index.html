@@ -19,14 +19,14 @@
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preload" as="image" href="img/hero.jpg">
+<link rel="preload" as="image" href="img/t_paint.jpg">
 <script>document.documentElement.className+=' js'</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"NGO","name":"Iraqi Women Association Fund","alternateName":"IWAF","url":"https://iraqiwomenfund.org/","email":"iraqiwomenfoundation@gmail.com","foundingDate":"1995-04-27","identifier":"Registered charity in England and Wales no. 1045994","areaServed":["Iraq","United Kingdom"],"description":"A small, volunteer-run UK charity supporting orphans, widows and families in need in Iraq since 1995.","sameAs":["https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/1045994"]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Instrument+Sans:wght@400;500;600&family=Noto+Sans+Cuneiform&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700&family=Noto+Sans+Cuneiform&display=swap" rel="stylesheet">
 <style>
 :root{
   /* IWAF brand palette: palm green, leaf, date brown, pomegranate, saffron, parchment, ink */
@@ -37,17 +37,17 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font-family:"Instrument Sans",system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{background:var(--paper);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 a{color:inherit}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
-h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+h1,h2,h3{font-family:"Libre Caslon Text",Georgia,serif;font-weight:700;line-height:1.12;letter-spacing:-.005em}
 h2{font-size:clamp(32px,4.4vw,52px)}
 h3{font-size:22px}
-.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--clay)}
+.eyebrow{font-size:16px;font-weight:600;color:var(--clay)}
 .lede{font-size:clamp(18px,1.6vw,21px);color:var(--muted);max-width:620px}
 section{padding:96px 0}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:600;text-decoration:none;font-size:16px;border:2px solid transparent;cursor:pointer;transition:transform .15s ease, background .15s}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:6px;font-weight:600;text-decoration:none;font-size:17px;border:2px solid transparent;cursor:pointer;transition:transform .15s ease, background .15s}
 .btn:hover{transform:translateY(-1px)}
 .btn-gold{background:var(--gold);color:var(--lapis-deep)}
 .btn-gold:hover{background:#e3a93f}
@@ -60,8 +60,8 @@ nav.top{position:sticky;top:0;z-index:50;background:rgba(22,56,41,.96);backdrop-
 nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .brand-mark{width:44px;height:auto;flex:none}
-.brand-name{font-family:"Fraunces",serif;font-weight:700;font-size:21px;letter-spacing:.04em}
-.brand-sub{display:block;font-size:11px;letter-spacing:.08em;opacity:.7;font-family:"Instrument Sans",sans-serif;font-weight:500;text-transform:uppercase}
+.brand-name{font-family:"Libre Caslon Text",Georgia,serif;font-weight:700;font-size:21px;letter-spacing:.04em}
+.brand-sub{display:block;font-size:11px;letter-spacing:.08em;opacity:.7;font-family:"Source Sans 3",sans-serif;font-weight:500;text-transform:uppercase}
 .navlinks{display:flex;gap:26px;align-items:center;font-size:15px}
 .navlinks a{text-decoration:none;opacity:.85}
 .navlinks a:hover{opacity:1}
@@ -70,19 +70,15 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 
 /* hero */
 .hero{background:var(--lapis-deep);color:#fff;padding:0;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:
-  radial-gradient(1200px 500px at -10% 110%, rgba(74,111,79,.5), transparent 60%),
-  radial-gradient(700px 400px at 40% -20%, rgba(31,75,58,.9), transparent 70%);}
-.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;min-height:calc(100vh - 68px);max-height:900px;padding-top:56px;padding-bottom:56px}
+.hero .wrap{position:relative;display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center;min-height:calc(100vh - 68px);max-height:860px;padding-top:56px;padding-bottom:56px}
 .hero .eyebrow{color:var(--gold-soft)}
-.hero h1{font-size:clamp(42px,6vw,78px);margin:18px 0 22px}
-.hero h1 em{font-style:italic;color:var(--gold)}
+.hero h1{font-size:clamp(36px,4.4vw,60px);margin:16px 0 22px}
 .hero p.lede{color:rgba(255,255,255,.82)}
 .hero .ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
-.hero-photo{position:relative;border-radius:200px 200px var(--radius) var(--radius);overflow:hidden;aspect-ratio:3/4;box-shadow:0 30px 80px rgba(0,0,0,.45)}
-.hero-photo img{width:100%;height:100%;object-fit:cover}
-.hero-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 20px 16px;font-size:13px;background:linear-gradient(transparent,rgba(0,0,0,.7));color:#fff}
-@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;min-height:0;max-height:none;gap:36px;padding-top:40px}.hero-photo{max-width:440px;aspect-ratio:4/5}}
+.hero-photo{position:relative}
+.hero-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:4px;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.hero-photo figcaption{margin-top:12px;font-size:15px;color:rgba(255,255,255,.72)}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;min-height:0;max-height:none;gap:36px;padding-top:40px}.hero-photo{max-width:640px;order:-1}.hero-photo figcaption{font-size:14px}}
 
 /* glaze band (Ishtar tiles) */
 .band{height:24px;background:radial-gradient(circle,var(--gold) 3.4px,transparent 4.2px) 6px 50%/20px 12px repeat-x,#2f261f;border-top:2px solid var(--gold);border-bottom:2px solid var(--gold)}
@@ -90,7 +86,7 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 /* stats */
 .stats{background:var(--paper-2);padding:56px 0}
 .stats .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.stat b{display:block;font-family:"Fraunces",serif;font-size:clamp(38px,4.5vw,56px);color:var(--lapis);line-height:1}
+.stat b{display:block;font-family:"Libre Caslon Text",Georgia,serif;font-size:clamp(38px,4.5vw,56px);color:var(--lapis);line-height:1}
 .stat span{display:block;margin-top:10px;color:var(--muted);font-size:15px;max-width:230px}
 @media(max-width:760px){.stats .grid{grid-template-columns:1fr 1fr;gap:32px 20px}}
 
@@ -98,7 +94,7 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .how{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
 .how-list{display:grid;gap:28px;margin-top:8px}
 .how-item{display:grid;grid-template-columns:44px 1fr;gap:18px}
-.how-item .n{width:44px;height:44px;border-radius:50%;background:var(--lapis);color:#fff;display:grid;place-items:center;font-family:"Fraunces",serif;font-weight:600}
+.how-item .n{width:44px;height:44px;border-radius:50%;background:var(--lapis);color:#fff;display:grid;place-items:center;font-family:"Libre Caslon Text",Georgia,serif;font-weight:600}
 .how-item p{color:var(--muted);margin-top:4px}
 .pledge{margin-top:30px;padding:22px 24px;border-left:4px solid var(--gold);background:#fff;border-radius:0 var(--radius) var(--radius) 0;font-size:16px;color:var(--muted)}
 @media(max-width:900px){.how{grid-template-columns:1fr;gap:36px}}
@@ -132,8 +128,8 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .tier:hover{background:rgba(255,255,255,.1)}
 .tier:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .tier[aria-pressed="true"]{background:var(--gold);color:var(--lapis-deep);border-color:var(--gold)}
-.tier .amt{font-family:"Fraunces",serif;font-size:30px;font-weight:600;line-height:1}
-.tier .amt small{font-size:15px;font-family:"Instrument Sans";font-weight:600;opacity:.75}
+.tier .amt{font-family:"Libre Caslon Text",Georgia,serif;font-size:30px;font-weight:600;line-height:1}
+.tier .amt small{font-size:15px;font-family:"Source Sans 3";font-weight:600;opacity:.75}
 .tier .what{font-size:14.5px;margin-top:8px;opacity:.88;line-height:1.4}
 .bank{scroll-margin-top:84px;background:var(--paper);color:var(--ink);border-radius:18px;padding:28px;position:sticky;top:90px}
 .bank h3{font-size:24px}
@@ -141,8 +137,8 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .bank .chosen b{color:var(--clay)}
 .row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
 .row:last-of-type{border-bottom:0}
-.row span{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
-.row strong{font-family:"Fraunces",serif;font-size:19px;font-weight:600}
+.row span{font-size:15px;color:var(--muted)}
+.row strong{font-family:"Libre Caslon Text",Georgia,serif;font-size:19px;font-weight:600}
 .copy{all:unset;cursor:pointer;font-size:12px;font-weight:600;color:var(--lapis);border:1px solid #bccdb8;border-radius:999px;padding:4px 10px;margin-left:10px}
 .copy:hover{background:var(--tint)}
 .bank .note{font-size:14px;color:var(--muted);margin-top:16px}
@@ -164,7 +160,7 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .c-b{grid-column:span 5}.c-b img{aspect-ratio:4/3}
 .c-c{grid-column:span 4}.c-c img{aspect-ratio:1/1}
 .c-quote{grid-column:span 4;background:var(--clay);color:#fff;border:0;padding:30px;justify-content:center}
-.c-quote q{font-family:"Fraunces",serif;font-size:24px;line-height:1.25;font-style:italic;quotes:"\201C" "\201D"}
+.c-quote q{font-family:"Libre Caslon Text",Georgia,serif;font-size:24px;line-height:1.25;font-style:italic;quotes:"\201C" "\201D"}
 .c-quote .who{margin-top:16px;font-size:14px;opacity:.85}
 .c-wide{grid-column:span 12;display:grid;grid-template-columns:1fr 1fr;gap:0}
 .c-wide img{height:100%;aspect-ratio:auto}
@@ -181,8 +177,8 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .art-photo img{border-radius:var(--radius);width:100%;aspect-ratio:4/3;object-fit:cover}
 .art-photo .badge{position:absolute;right:-14px;bottom:-22px;background:var(--lapis);color:#fff;border-radius:12px;padding:14px 18px;font-size:14px;max-width:240px;box-shadow:0 14px 40px rgba(22,56,41,.3)}
 .art p{color:var(--muted);margin-top:16px}
-.art blockquote{margin-top:26px;font-family:"Fraunces",serif;font-size:23px;line-height:1.3;font-style:italic;color:var(--lapis-deep);border-left:4px solid var(--gold);padding-left:20px}
-.art blockquote cite{display:block;font-family:"Instrument Sans";font-style:normal;font-size:14px;color:var(--muted);margin-top:10px}
+.art blockquote{margin-top:26px;font-family:"Libre Caslon Text",Georgia,serif;font-size:23px;line-height:1.3;font-style:italic;color:var(--lapis-deep);border-left:4px solid var(--gold);padding-left:20px}
+.art blockquote cite{display:block;font-family:"Source Sans 3";font-style:normal;font-size:14px;color:var(--muted);margin-top:10px}
 .museum{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:72px}
 .museum blockquote{margin-top:0;font-size:clamp(22px,2.4vw,28px)}
 .museum img{width:100%;border-radius:var(--radius);aspect-ratio:3/2;object-fit:cover}
@@ -193,7 +189,7 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .tee{margin-top:56px;display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;background:var(--lapis-deep);color:#fff;border-radius:18px;padding:28px 32px}
 .tee .glyph{font-family:"Noto Sans Cuneiform",serif;font-size:56px;color:var(--gold);line-height:1}
 .tee p{color:rgba(255,255,255,.78);font-size:15.5px;margin-top:4px}
-.tee .price{font-family:"Fraunces",serif;font-size:34px;font-weight:600;color:var(--gold-soft)}
+.tee .price{font-family:"Libre Caslon Text",Georgia,serif;font-size:34px;font-weight:600;color:var(--gold-soft)}
 @media(max-width:900px){.art-grid{grid-template-columns:1fr;gap:48px}.strip{grid-template-columns:repeat(2,1fr)}.strip figure:last-child{display:none}.tee{grid-template-columns:1fr;gap:12px}.art-photo .badge{right:12px}.museum{grid-template-columns:1fr;gap:24px;margin-top:56px}}
 
 /* iftar */
@@ -202,7 +198,7 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .iftar .img img{width:100%;height:100%;object-fit:cover;opacity:.55}
 .iftar .over{position:absolute;inset:0;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(0,0,0,.7),rgba(0,0,0,.15) 70%)}
 .iftar .over .wrap{padding-bottom:64px;width:100%}
-.iftar .big{font-family:"Fraunces",serif;font-size:clamp(70px,12vw,150px);line-height:.9;color:var(--gold)}
+.iftar .big{font-family:"Libre Caslon Text",Georgia,serif;font-size:clamp(70px,12vw,150px);line-height:.9;color:var(--gold)}
 .iftar h2{max-width:760px;margin-top:10px}
 .iftar p{max-width:620px;color:rgba(255,255,255,.85);margin-top:16px;font-size:18px}
 
@@ -212,7 +208,7 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .tl-item{display:grid;grid-template-columns:80px 30px 1fr 150px;column-gap:14px;row-gap:12px;padding:18px 0;align-items:start}
 .tl-item img{width:150px;aspect-ratio:4/3;object-fit:cover;border-radius:10px}
 @media(max-width:700px){.tl::before{left:83px}.tl-item{grid-template-columns:56px 24px 1fr}.tl-item .yr{font-size:19px}.tl-item img{grid-column:3;width:100%;max-width:180px}}
-.tl-item .yr{font-family:"Fraunces",serif;font-size:22px;font-weight:600;color:var(--lapis);text-align:right}
+.tl-item .yr{font-family:"Libre Caslon Text",Georgia,serif;font-size:22px;font-weight:600;color:var(--lapis);text-align:right}
 .tl-item .dot{width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--paper);box-shadow:0 0 0 2px var(--gold);margin:8px auto 0;position:relative;z-index:1}
 .tl-item p{color:var(--muted)}
 .tl-item strong{color:var(--ink)}
@@ -250,10 +246,10 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .film{background:var(--lapis-deep);color:#fff;padding:88px 0}
 .film .stage{position:relative;max-width:560px;margin:0 auto;padding:0 24px}
 .film .stage img{width:100%;height:auto;border-radius:6px;box-shadow:0 30px 80px rgba(0,0,0,.45)}
-.film .caps{list-style:none;max-width:620px;margin:36px auto 0;padding:0 24px;display:grid;gap:10px;text-align:center;font-family:"Fraunces",serif;font-size:22px;color:rgba(255,255,255,.88)}
+.film .caps{list-style:none;max-width:620px;margin:36px auto 0;padding:0 24px;display:grid;gap:10px;text-align:center;font-family:"Libre Caslon Text",Georgia,serif;font-size:22px;color:rgba(255,255,255,.88)}
 .film .caps .fin b{display:block;color:var(--gold);font-size:30px;font-weight:600}
-.film .caps .fin span{display:block;font-family:"Instrument Sans";font-size:16px;color:rgba(255,255,255,.7);margin-top:6px}
-.film .credit{display:block;text-align:center;margin-top:18px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-soft)}
+.film .caps .fin span{display:block;font-family:"Source Sans 3";font-size:16px;color:rgba(255,255,255,.7);margin-top:6px}
+.film .credit{display:block;text-align:center;margin-top:18px;font-size:16px;font-weight:600;color:var(--gold-soft)}
 .film.on{height:420vh;padding:0}
 .film.on .sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
 .film.on .stage{position:absolute;inset:0;max-width:none;margin:0;padding:0;overflow:hidden}
@@ -323,7 +319,7 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
   <div class="wrap">
     <div>
       <div class="eyebrow">UK registered charity 1045994 · Since 1995</div>
-      <h1>Thirty years of <em>showing up</em> for Iraq's orphans and widows.</h1>
+      <h1>Thirty years of showing up for Iraq's orphans and widows.</h1>
       <p class="lede">We are a small, volunteer-run charity working mainly in Baghdad. We know the schools and families we support by name, and our trustees travel there themselves so your gift arrives where it should.</p>
       <div class="ctas">
         <a class="btn btn-gold" href="#give" data-tier="sponsor">Sponsor a child · £1 a day</a>
@@ -331,8 +327,8 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
       </div>
     </div>
     <figure class="hero-photo">
-      <img src="img/hero.jpg" fetchpriority="high" alt="A boy sketching an ancient Assyrian carving at the Iraq Museum in Baghdad">
-      <figcaption>Sketching his ancestors' carvings at the Iraq Museum, Baghdad</figcaption>
+      <img src="img/t_paint.jpg" fetchpriority="high" width="1100" height="825" alt="Boys from the orphan schools holding up their paintings in the courtyard of Al-Wattar House, Baghdad">
+      <figcaption>Boys from the orphan schools with their paintings at Al-Wattar House, Baghdad, 2025.</figcaption>
     </figure>
   </div>
 </header>
@@ -460,7 +456,7 @@ footer .amargi{font-family:"Noto Sans Cuneiform",serif;color:var(--gold);font-si
     </div>
     <div class="mosaic">
       <figure class="card c-a reveal"><img src="img/t_wattar.jpg" alt="Children and hosts in the courtyard of Al-Wattar Historic House" loading="lazy"><figcaption class="cap"><h3>A day at Al-Wattar Historic House</h3><p>After visiting Al-Mutanabbi Street and the Qishla, the girls were welcomed to Al-Wattar House and invited to paint on the veranda overlooking the Tigris.</p></figcaption></figure>
-      <figure class="card c-b reveal"><img src="img/t_paint.jpg" alt="Boys holding up their paintings at Al-Wattar House" loading="lazy"><figcaption class="cap"><h3>Their first ever earnings</h3><p>The girls' paintings were auctioned days later and every penny went to them, some taking home up to 175,000 IQD. Donations then paid for 22 boys to make the same trip.</p></figcaption></figure>
+      <figure class="card c-b reveal"><img src="img/t_kishla.jpg" alt="Boys from the orphan schools on the Qishla colonnade in Baghdad" loading="lazy"><figcaption class="cap"><h3>Their first ever earnings</h3><p>The girls' paintings were auctioned days later and every penny went to them, some taking home up to 175,000 IQD. Donations then paid for 22 boys to make the same trip.</p></figcaption></figure>
       <figure class="card c-c reveal"><img src="img/t_babylon.jpg" alt="A large group of boys in front of the reconstructed Ishtar Gate at Babylon" loading="lazy"><figcaption class="cap"><h3>50 boys at Babylon</h3><p>A first ever school trip to Babylon in Hilla, followed by lunch together.</p></figcaption></figure>
       <div class="card c-quote reveal"><q>For many, this was their first ever outing and their first ever earnings. Truly a life-changing day.</q><div class="who">Amira, IWAF, on the girls' trip</div></div>
       <figure class="card c-c reveal"><img src="img/t_park.jpg" alt="Girls on an evening trip to Baghdad's theme park" loading="lazy"><figcaption class="cap"><h3>Theme park days</h3><p>Two trips for younger students to Baghdad's theme park, with entry, a meal, sweets and ice cream covered.</p></figcaption></figure>
